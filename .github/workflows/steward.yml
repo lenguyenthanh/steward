@@ -24,7 +24,7 @@ jobs:
         with:
           github-token: ${{ steps.generate-token.outputs.token }}
           repos-file: 'repos.md'
-          author-email: 207632+nt9-bot[bot]@users.noreply.github.com
-          author-name: nt9-bot[bot]
+          author-email: 207632+nt9-steward[bot]@users.noreply.github.com
+          author-name: nt9-steward[bot]
           github-app-id: 207632
           github-app-key: ${{ secrets.STEWARD_SECRET }}
