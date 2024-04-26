@@ -5,3 +5,7 @@ Runs the [scala-steward-action](https://github.com/scala-steward-org/scala-stewa
 ## Adding a repo
 
 This action will only work on my projects.  For your projects, see [diy-steward](https://github.com/armanbilge/diy-steward/).
+
+## Restart workflows after 60 days
+
+Go to [actions/workflows](https://github.com/lenguyenthanh/steward/actions/workflows/steward.yml) click `enable workflows`
