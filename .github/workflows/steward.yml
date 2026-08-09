@@ -11,14 +11,16 @@ jobs:
     name: Steward
     steps:
       - uses: actions/checkout@v7
-
       - name: Generate token
         id: generate-token
         uses: tibdex/github-app-token@v2
         with:
           app_id: 207632
           private_key: ${{ secrets.STEWARD_SECRET }}
-
+      - uses: actions/setup-java@03ad4de0992f5dab5e18fcb136590ce7c4a0ac95 # v5.6.0
+        with:
+          distribution: temurin
+          java-version: 21
       - name: Launch Scala Steward
         uses: scala-steward-org/scala-steward-action@v2.92.0
         with:
