@@ -22,7 +22,7 @@ jobs:
           distribution: temurin
           java-version: 21
       - name: Launch Scala Steward
-        uses: scala-steward-org/scala-steward-action@v2.94.0
+        uses: scala-steward-org/scala-steward-action@v2.95.0
         with:
           github-token: ${{ steps.generate-token.outputs.token }}
           author-email: 106868453+nt9-steward[bot]@users.noreply.github.com
